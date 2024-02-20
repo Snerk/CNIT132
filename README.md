@@ -18,7 +18,7 @@ Select and blend colors for your web projects using these tools:
 - [Colr.org](http://www.colr.org/)
 - [Colors on the Web - Color Wizard](http://www.colorsontheweb.com/Color-Tools/Color-Wizard)
 
-- ## SEO
+## SEO
 - [Sitemaps](https://www.xml-sitemaps.com/)
 - [Browser usage stats](https://gs.statcounter.com/)
 - [How to get your website on Google Search](https://www.google.com/webmasters/#?modal_active=none)
