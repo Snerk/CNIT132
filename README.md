@@ -14,14 +14,26 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Emoji!](https://www.w3schools.com/charsets/ref_emoji.asp)
 
 ## CSS
-- - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-- - [SpeciFISHity](https://specifishity.com/)
-- [CSS animation](https://www.w3schools.com/css/css3_animations.asp)
+
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
-- CSS Properties
-- - [W3 CSS Properties](https://www.w3schools.com/cssref/)
-- - [List of CSS properties, both proposed and standard](https://www.w3.org/Style/CSS/all-properties.en.html#colorkey)
-- - [
+- [Can I Use - Browser support tables](https://caniuse.com/)
+- [Intro to Opacity & RGBA](https://www.css3.info/introduction-opacity-rgba/)
+- [Convert px to em](https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp)
+- [Pseudo Classes & Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
+- [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
+- Animation
+  - [CSS animation](https://www.w3schools.com/css/css3_animations.asp) 
+  - [Examples](https://www.creativebloq.com/inspiration/css-animation-examples)
+- Properties
+  - [W3 CSS Properties](https://www.w3schools.com/cssref/)
+  - [List of CSS properties, both proposed and standard](https://www.w3.org/Style/CSS/all-properties.en.html#colorkey)
+- Selectors
+  - [W3 Selectors](https://www.w3schools.com/cssref/css_selectors.php)
+  - [Selectors to know by heart](https://webdesign.tutsplus.com/the-30-css-selectors-you-must-memorize--net-16048t)
+- Specificity
+  - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  - [SpeciFISHity](https://specifishity.com/)
+  - [Specificity Calculator](https://specificity.keegan.st/)
 ## Color Tools
 
 Select and blend colors for your web projects using these tools:
