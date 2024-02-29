@@ -4,12 +4,13 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 
 ## Essential HTML/CSS Links
 
+- [A Brief History of Web Development](https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development)
 - [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [HTML Basics on MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 - [W3C Validator](https://validator.w3.org/)
 - [Special Characters and Entities](https://brajeshwar.github.io/entities/)
 - [Image Map Generator](https://www.image-map.net/)
-
+- [Emoji!](https://www.w3schools.com/charsets/ref_emoji.asp)
 ## Color Tools
 
 Select and blend colors for your web projects using these tools:
@@ -27,5 +28,5 @@ Select and blend colors for your web projects using these tools:
 - [Google Chrome Dev Tools Docs](https://developer.chrome.com/docs/devtools/)
 - [Very nice online SEO tool](https://www.seoworks.com/)
 - [How Google Spider Works](https://support.google.com/webmasters/answer/182072?hl=en)
-- [SEO Tools/Tips](https://ccsf.instructure.com/courses/58996/files/11289744/download?wrap=1)
 - [12 Essential Open Graph Meta Tags for Facebook and Twitter](https://neilpatel.com/blog/open-graph-meta-tags/)
+- [Google Keywords](https://adwords.google.com/select/KeywordToolExternal)
