@@ -10,6 +10,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [W3C Validator](https://validator.w3.org/)
 - [Special Characters and Entities](https://brajeshwar.github.io/entities/)
 - [Image Map Generator](https://www.image-map.net/)
+- [Live tool for HTML/CSS/JavaScript development](https://codepen.io/pen/)
 - [Emoji!](https://www.w3schools.com/charsets/ref_emoji.asp)
 ## Color Tools
 
