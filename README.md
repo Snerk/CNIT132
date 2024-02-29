@@ -16,6 +16,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 ## CSS
 - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 - [SpeciFISHity](https://specifishity.com/)
+- [CSS animation](https://www.w3schools.com/css/css3_animations.asp)
 ## Color Tools
 
 Select and blend colors for your web projects using these tools:
