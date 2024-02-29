@@ -14,9 +14,14 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Emoji!](https://www.w3schools.com/charsets/ref_emoji.asp)
 
 ## CSS
-- [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-- [SpeciFISHity](https://specifishity.com/)
+- - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- - [SpeciFISHity](https://specifishity.com/)
 - [CSS animation](https://www.w3schools.com/css/css3_animations.asp)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- CSS Properties
+- - [W3 CSS Properties](https://www.w3schools.com/cssref/)
+- - [List of CSS properties, both proposed and standard](https://www.w3.org/Style/CSS/all-properties.en.html#colorkey)
+- - [
 ## Color Tools
 
 Select and blend colors for your web projects using these tools:
