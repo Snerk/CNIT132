@@ -1,0 +1,348 @@
+    <h1 class="page-title">Module 3 </h1>
+  
+  
+  
+    <h3><strong>CSS Selectors</strong></h3>
+<p>There are different types of CSS selectors:</p>
+<ul>
+<li><strong>HTML element</strong> - when you use the element name 
+directly as the selector - like we did in our first exercise, when we 
+created first.css that we used <strong>h2 { ... }</strong> the <strong>h2</strong> was a CSS selector in this category as we used the name of the element (h2) directly.</li>
+<li><strong>Class</strong> - we code a class as a CSS selector with a<strong> .</strong> (period) before the name of the class - we saw a CSS class being coded when we learned about specificity (<strong>.redbold</strong>)</li>
+<li><strong>Id</strong> - we can use the value of the id of an element as a CSS selector just by using a <strong>#</strong> (pound sign) before the name of the id value.</li>
+<li><strong>Contextual</strong> - the CSS rule will be applied within 
+the context of the container (parent) element. Sometimes this is 
+referred to as a descendant selector - we also used this when learning 
+about specificity when we used <strong>div p</strong> and <strong>.redbold p</strong>
+ - both are contextual selectors. The first means every paragraph inside
+ the div element. The second means every paragraph inside an element 
+that has <strong>class="redbold"</strong>&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Using &lt;span&gt; tag</strong></h3>
+<p>This tag is sometimes used to modify certain characteristics of just a
+ part of an element so we can apply a different CSS rule just to that 
+part of it. For example: imagine that we have a paragraph and want to 
+change the background color and the font color of just one part of the 
+paragraph. We can achieve that by doing:</p>
+<pre>&lt;p&gt;This paragraph will have <strong>&lt;span style="background-color: yellow; color: red;"&gt;</strong>different background color and font color just here<strong>&lt;/span&gt;</strong>. The rest of the paragraph will be default.&lt;/p&gt;</pre>
+<p>OR</p>
+<pre>&lt;p&gt;This paragraph will have <strong>&lt;span class="redyellow"&gt;</strong>different background color and font color just here<strong>&lt;/span&gt;</strong>. The rest of the paragraph will be default.&lt;/p&gt;</pre>
+<p>Of course, in the second example, I would need to define, in the CSS, the rule for the class <strong>redyellow,</strong> and that could be defined as (in the embedded CSS or in the external CSS file):</p>
+<pre>.redyellow { background-color: yellow;&nbsp; color: red; }</pre>
+<p>The span element is used because it's an inline element meaning it 
+will not impact the flow of the content (it will not create another 
+block, breaking the line, or something like that).</p>
+<p>&nbsp;</p>
+<h3><strong>Multiple CSS Selectors</strong></h3>
+<p>It's ok to code multiple CSS selectors for the same CSS rule, such as:</p>
+<pre>h2, div p, .attn { color: red; text-align: right; }</pre>
+<p>In this case, I'm even using 3 different types of selectors:</p>
+<ul>
+<li>HTML element name</li>
+<li>Contextual</li>
+<li>Class</li>
+</ul>
+<p>Can you recognize them? Each selector is separated by (comma).&nbsp;</p>
+<p>This rule is basically "saying" - "Hi Browser" if you see an <strong>h2</strong> element or a paragraph (<strong>p</strong>) inside a <strong>div</strong>, or any element with <strong>class="attn"</strong>, please make the font color to be red and the text to align to the right.<br><br></p>
+<h3><strong>Universal Selector</strong></h3>
+<p>The <strong>*</strong> (asterisk) represents the universal selector. So, if you see:</p>
+<pre>* { color: blue; }</pre>
+<p>It means: apply font color blue to ALL elements of the page! Take a 
+look again at the specificity image, and you will notice that this is 
+the LEAST specific CSS selector!</p>
+<h3><br><strong>Child-parent Relationship for CSS Selector</strong></h3>
+<p>We have learned about the contextual selector as in the example we had for <strong>div p</strong>. Now, imagine if you see a CSS selector like this:</p>
+<pre>div &gt; p { color:blue; }</pre>
+<p>Some developers think that <strong>div &gt; p</strong> is the same as <strong>div p,</strong> but <span style="background-color: #ffff00;"><strong>IT IS NOT</strong></span>!!! The <strong>div &gt; p</strong> means: every <strong>p</strong> that is a <span style="background-color: #ffff00;"><strong>DIRECT</strong></span> child of a <strong>div</strong> element, while the <strong>div p</strong> means every <strong>p</strong> inside a <strong>div</strong> element (not necessarily as a direct child). Let's see the difference with the code below:</p>
+<pre>&lt;div&gt;<br>&nbsp; &nbsp;&lt;p&gt;Paragraph 1 is a direct child of the div&lt;/p&gt;<br>&nbsp; &nbsp;&lt;aside&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Paragraph 2 is inside an aside element and is not a direct child of the div, it is a direct child of the aside&lt;/p&gt;<br>&nbsp; &nbsp;&lt;/aside&gt;<br>&lt;/div&gt;</pre>
+<p>Suppose that in the CSS, you would have:</p>
+<pre>div &gt; p { font-weight: bold; color: blue; }</pre>
+<p>With this code, only the <strong>Paragraph 1</strong>, the one that is a <span style="background-color: #ffff00;"><strong>DIRECT</strong></span> child of the <strong>div</strong> element, would have the bold blue text! You can see this exact code in the <span style="color: #ff0000;"><strong>parentchild.html</strong></span> file. Open it in the browser, and you will see that only the first paragraph, the direct child of the <strong>div</strong>, will be bold and blue. If you want, you can delete the <strong>&gt;</strong> sign in the CSS selector (remember to leave at least one blank space between <strong>div</strong> and <strong>p</strong>),
+ save the file, and refresh the page in the browser. Now, you will see 
+that all paragraphs, no matter if they are direct or indirect children 
+of the <strong>div</strong>, will have the text in bold and blue.</p>
+<p>Another type of parent-child relationship that you might see being used is with the + sign such as:</p>
+<pre>h1 + h2 { font-style:italic; color: pink; }</pre>
+<p><span>Selects the first &lt;h2&gt; element that is placed immediately after &lt;h1&gt; element.</span></p>
+<p>Open the <span style="color: #ff0000;"><strong>parentchild.html</strong></span> file in the browser and insert the code above before the <strong>&lt;/style&gt;</strong> tag.</p>
+<p>After the <strong>&lt;body&gt;</strong> tag, insert the following code:</p>
+<pre>&lt;h1&gt;This is my heading 1&lt;/h1&gt;<br>&lt;h2&gt;This is my heading 2&lt;/h2&gt;</pre>
+<p>Save the file and show it in the browser. Notice that the <strong>h2</strong> element is italicized and with pink color. But, if you put a single line between <strong>h1</strong> and <strong>h2</strong> elements, such as:</p>
+<pre>&lt;h1&gt;This is my heading 1&lt;/h1&gt;<br>&lt;p&gt;This is just a paragraph&lt;/p&gt;<br>&lt;h2&gt;This is my heading 2&lt;/p&gt;</pre>
+<p>Then, the CSS rule will not apply anymore because the <strong>+</strong> sign means that the second element needs to come <span style="background-color: #ffff00;"><strong>EXACTLY</strong></span> after the first element with nothing (no other element) in between the two.</p>
+<h3><strong>Attribute Selectors</strong></h3>
+<p>You can code the attribute's value depending on what you want to target on the web page - you can take a look at the <a href="https://www.w3schools.com/css/css_attribute_selectors.asp" class="external" target="_blank" rel="noreferrer noopener"><span>W3Schools website Attribute Selectors</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+    <path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a> and practice the different ways of using this type of selector.&nbsp;</p>
+<pre>img[src="sun.gif"] { border: solid 5px orange; }<br>a[target] { text-decoration: none; }</pre>
+<p>This type of CSS selector is using an attribute that can be found in 
+the element to apply the CSS rule. In the example above, the <strong>img</strong>
+ (image) element is the targeted element, but not all images on the web 
+page will have a 5px orange border around them; only the image(s) that 
+the <strong>src</strong> attribute is equal to <strong>sun.gif</strong>. The second example is targeting the hyperlink element (<strong>a</strong>) but only the ones that are using the <strong>target</strong> attribute (remember that if we wanted to open a link in another tab/window, we would use the <strong>target="_blank"?</strong>), no matter the value of that <strong>target</strong> attribute and if that's the case, that default underline of the hyperlink will be removed (that's what the <strong>text-decoration: none</strong> is doing).</p>
+<p>&nbsp;</p>
+<h3><strong>Pseudo Classes and Pseudo Elements</strong></h3>
+<p><span>A CSS pseudo-element is used to style specified parts of an element.</span></p>
+<p>A pseudo-class is used to define a special state of an element.</p>
+<p>For example, it can be used to:</p>
+<ul>
+<li>Style an element when a user mouses over it</li>
+<li>Style visited and unvisited links differently</li>
+<li>Style an element when it gets focus</li>
+</ul>
+<p>The syntax is <strong>CSS selector<span style="color: #ff0000;">:</span>pseudo-class</strong>. The most well-known pseudo-classes are the ones used with hyperlink elements:</p>
+<ul>
+<li><strong>a:link</strong> - not selected or visited by the user yet</li>
+<li><strong>a:visited</strong> - already visited by the user</li>
+<li><strong>a:hover</strong> - when the user hovers the mouse over the 
+link text (this does not apply on mobile devices as you do not ever 
+hover a text on a mobile device)</li>
+<li><strong>a:active</strong> - at the exact moment that the user clicks on the link text</li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>Note:</strong></span>&nbsp;<em><strong>a:hover</strong></em> MUST come after<em><strong> a:link</strong></em> and <em><strong>a:visited</strong></em> in the CSS definition in order to be effective! The <em><strong>a:active</strong></em> MUST come after <em><strong>a:hover</strong></em>&nbsp;in the CSS definition in order to be effective! Pseudo-class names <span style="background-color: #ffff00;"><strong>are not case-sensitive</strong></span>.</p>
+<p>One other useful pseudo-class is :focus and is generally used in forms - for example:</p>
+<pre>input:focus { background-color: yellow; }</pre>
+<p>This means that whenever the user focuses on an <strong>input</strong>
+ element (by tabbing to that element or by manually putting the pointer 
+of the cursor in that element), the background color of the <strong>input</strong> element will become yellow.</p>
+<p>The way to code pseudo-elements is <strong>CSS selector<span style="color: #ff0000;">::</span>pseudo-element</strong>. Notice that now we are using two <strong>:</strong> (colon) instead of one. Most browsers still work fine if you code a pseudo-element with just one<strong> :</strong> (colon).</p>
+<p>The most used pseudo-elements are:</p>
+<ul>
+<li><strong>::first-line</strong> - The first line, in the browser window, of the element is the target</li>
+<li><strong>::first-letter</strong> - The first letter of the element is the target</li>
+<li><strong>::before</strong> - Used to insert some content before the element</li>
+<li><strong>::after</strong> - Used to insert some content after the element</li>
+</ul>
+<p>Take a look at <span style="color: #ff0000;"><strong>pseudo.html</strong></span>
+ file. Open in the browser and in the web editor and see if you can spot
+ the use of pseudo classes and pseudo-elements. When you open it in the 
+browser, you should see the result like in the image below:</p>
+<!--<p><img src="Module%203%20-%20Coding%20CSS%20-%20Part%201%20Intermediate%20HTML%20and%20CSS%2032744-931_files/pseudo.png" alt="result in the browser of pseudo.html file" width="700" height="288" data-api-endpoint="https://ccsf.instructure.com/api/v1/courses/58996/files/11289642" data-api-returntype="File"></p> -->
+<h3><strong>More pseudo-classes</strong></h3>
+<p>There are some more interesting pseudo-classes, such as:</p>
+<ul>
+<li><strong>:first-of-type</strong>, <strong>:last-of-type</strong> - Targets every element that is the first (or the last for the second case) element of that type of its parent.</li>
+<li><strong>:nth-of-type</strong> - Targets every element that is the nth of that type of its parent</li>
+<li><strong>:first-child</strong>, <strong>:last-child</strong> - Targets every element that is the first (or last) child of its parent</li>
+<li><strong>:nth-child</strong> - Targets every element that is the nth child of its parent</li>
+</ul>
+<p>Let's see this in action,so you can understand the difference between <strong>child</strong> and <strong>type</strong>.</p>
+<p>Open <span style="color: #ff0000;"><strong>childtype.html</strong></span> file - in the browser and in your web editor. Notice that you have 2 paragraphs right after the <strong>h1</strong> element, and you then have 2 other paragraphs inside a <strong>section</strong>&nbsp;element. If you look at the embedded CSS, you will see the code:</p>
+<pre>p:first-of-type { background-color: #00FF00; }</pre>
+<p>The child <strong>p</strong> is <strong>first-of-type</strong> for the <strong>body</strong> element (this is the first paragraph - the first <strong>TYPE</strong> of paragraph - of the page). The child <strong>p</strong> is also <strong>first-of-type</strong> for the <strong>section</strong>&nbsp;element (it's the first paragraph - the first <strong>TYPE</strong> of paragraph - of the <strong>section</strong> element - It is NOT the first element, but it is the first <strong>TYPE</strong> of paragraph!). The same when you look at the <strong>footer </strong>element - the first <strong>p</strong> is the <strong>first-of-type</strong> for the footer element!</p>
+<p>Now, change the <strong>first-of-type</strong> in the CSS to be <strong>first-child</strong> and see what happens. Can you explain what happened?&nbsp;</p>
+<p>Only the first paragraph of the <strong>footer</strong> has the background color applied as it's the <strong>FIRST CHILD</strong> of that <strong>footer; on</strong>&nbsp;the other hand, the first paragraph of the page <strong>IS NOT</strong> a first child of the <strong>body</strong> (notice that the body's first child is the <strong>h1</strong>, not the <strong>p</strong>) and the first paragraph of the <strong>main</strong> element <strong>IS NOT</strong> the first child of the <strong>main</strong> element either as there is an <strong>h2</strong> before that p and, in this case, from the perspective of the <strong>main</strong> element, the <strong>h2</strong> is the first child!</p>
+
+<h3><strong>Coding Color in CSS</strong></h3>
+<p>There are different ways to code colors in CSS:</p>
+<pre><strong>p { color: red; }</strong><br><br><strong>p { color: #FF0000; }</strong><br><br><strong>p { color: #F00; }&nbsp; /* one character for each hex pair only used with web safe colors */</strong><br><br><strong>p { color: </strong><strong>rgb</strong><strong>(255,0,0); }</strong><br><br><strong>p { color: </strong><strong>rgba</strong><strong>(255,0,0,0.5); }&nbsp; /*&nbsp; CSS3 – last number refers to opacity */</strong><br><br><strong>p { color: </strong><strong>hsl</strong><strong>(0, 100%, 50%); } /* Hue value */&nbsp;</strong><br><br><strong>p { color: </strong><strong>hsla</strong><strong>(0, 100%, 50%, 0.5) }</strong></pre>
+<p>You can learn more about the use of the Hue value of the color at the <a href="https://www.w3schools.com/colors/colors_hsl.asp" class="external" target="_blank" rel="noreferrer noopener"><span>W3Schools website</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+<path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a>.</p>
+<h3><strong>CSS for the background</strong></h3>
+<ul>
+<li><strong>background-color</strong> - to control the background color of an element</li>
+<li><strong>background-image</strong> - to set an image as the background of an element</li>
+<li><strong>background-attachment</strong> - only valid if you use an 
+image as a background, not used for color as a background. It controls 
+how the image will be attached. The default is to have the image 
+scrolling with the scrolling of the element but if you change the value 
+to fixed the image will not move even when the element moves</li>
+<li><strong>background-position</strong> - to offset the initial 
+position of the background-image - you can use percentage value or 
+keywords such as: left, right, center, top, bottom)</li>
+<li><strong>background-repeat</strong> - the default is to have the 
+background image repeating as a tile all over the element. If you set 
+the value to no-repeat, the background-image will be shown only once. If
+you set the value to repeat-x, the image will be repeated as a tile at 
+the top of the element in a horizontal line, if you set the value to 
+repeat-y, the image will be repeated as tile at the left side of the 
+element in a vertical line</li>
+<li><strong>background-size</strong> - the default value is auto. If you set the value to cover or contain the image will be scaled to its biggest size</li>
+<li><strong>background-blend-mode</strong> - defines the blend mode of 
+each background layer (images or color). There are many different values
+that can be used for this CSS property and if you want to know more 
+details about it, visit the <a href="https://www.w3schools.com/cssref/pr_background-blend-mode.asp" class="external" target="_blank" rel="noreferrer noopener"><span>W3Schools Background Blend Mode</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+<path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a> where you can even try out some of the values</li>
+<li><strong>background</strong> - you can mix color, images, multiple 
+background images and all the values of the other properties mentioned 
+above when using this CSS property</li>
+</ul>
+<p>Let's work with <span style="color: #ff0000;"><strong>background.html</strong> </span>file. Open in your web editor and, if you want, open also in the browser.</p>
+<p>Take a look at the CSS that has been coded only for the <strong>body</strong> element and for the <strong>h2</strong>. Let's try now to modify the CSS code to achieve the following:</p>
+<ol>
+<li>Change the background color of the whole page to be some type of light green and then use the <strong>background-blend-mode</strong> to test some of the values such as <strong>multiply</strong>, <strong>darken</strong>, <strong>lighter</strong>, etc. and see how it impacts the big trillium that is shown at the top right side of the page</li>
+<li>Change the position of that big trillium to be at the center of the 
+whole page and to stay there even when the user scrolls down the page</li>
+<li>Insert a background color yellow <strong>but only for the first paragraph of the page</strong> - remember that you can use what you have learned before such as pseudo-classes!!!</li>
+</ol>
+<p>Make sure you exchange ideas in the forum about this exercise!</p>
+<p>Take a look at the CSS code below:</p>
+<pre>body { background: lightgreen url(trillium.gif) repeat-x fixed; }</pre>
+<p>What is this doing? This is setting a <strong>background-color</strong> lightgreen, and, using the same CSS property it is also setting a <strong>background-image </strong>using <strong>trillium.gif</strong> and the <strong>background-repeat</strong> is being set to <strong>repeat-x</strong> (create a horizontal tile of the image at the top of the element) and the <strong>background-attachment</strong> is set to <strong>fixed</strong>
+(the user will scroll down the page and the background-image will stick
+to the position). This is an example of setting the background using 
+only the <strong>background</strong> CSS property.</p>
+<h3><strong>Text Properties</strong></h3>
+<p>There are some interesting CSS properties to deal with the format of the text such as:</p>
+<ul>
+<li><strong>letter-spacing</strong> - the unit used can be px, or pt, or em, or rem and this will determine the space between the letters of the words. Example: <span style="font-family: Courier; font-size: 0.8em;">p { letter-spacing: 5px; }</span> - the letters of all paragraph elements will be spaced out by 5px.</li>
+<li><strong>line-height</strong> - every browser has a default 
+line-height for the elements we use in HTML but you can modify that 
+line-height to increase or decrease the default line-height of the 
+elements. Example: <span style="font-family: Courier; font-size: 0.8em;">h2 { line-height: 4em; }</span> - the line-height of every h2 element will be 4em.</li>
+<li><strong>text-align</strong> - the default is to align the content of
+the element to the left but you can modify this alignment using this 
+CSS property with the value of center, or right - Example: <span style="font-family: Courier; font-size: 0.8em;">h3:first-child { text-align:right; }</span> - this will align to the right every h3 that is the first child of its parent</li>
+<li><strong>text-decoration</strong> - when you want to set or remove 
+the underline and/or put another type of text-decoration using values as
+line-through, blink, overline - Example: <span style="font-family: Courier; font-size: 0.8em;">h2 { text-decoration: underline overline }</span> - every h2 will have a line above and below the element</li>
+<li><strong>text-indent</strong> - sets a positive or negative indentation to the first line of text of the element. Example: <span style="font-family: Courier; font-size: 0.8em;">p:first-child { text-indentation: 20px; }</span> - the paragraph that is the first child of its parent will have the first line of text indented by 20px</li>
+<li><strong>word-spacing</strong> - the same concept of letter-spacing but applied the words of an element. Example: <span style="font-family: Courier; font-size: 0.8em;">h1 { word-spacing: 30px; }</span> - the space between the words of every h1 element will be 30px</li>
+</ul>
+<h3><strong>CSS Properties for Lists</strong></h3>
+<p>The lists we have learned before having their default presentation: 
+unordered lists will have their items preceded by a bullet and ordered 
+lists will have their items preceded by a number (integer number). This 
+presentation can be changed using some CSS properties such as:</p>
+<ul>
+<li><strong>list-style-image</strong>, or <strong>list-style-type</strong> (<strong>list-style</strong>) - to define the image or the type of the marker to be used for each list item. The <strong>list-style-type</strong> can have the values: <strong>disc</strong>, <strong>circle</strong>, <strong>square</strong>, <strong>none</strong> (for <span style="background-color: #ffff00;"><strong>unordered lists</strong></span>), or <strong>decimal</strong>, <strong>upper-roman</strong>, <strong>lower-alpha</strong>, <strong>lower-roman</strong>, <strong>upper-alpha</strong>, <strong>none</strong> (for <span style="background-color: #ffff00;"><strong>ordered lists</strong></span>). If the image defined for <strong>list-style-image</strong> is not found, the browser will display what has been defined for <strong>list-style-type</strong> or the default for the list. Example: <span style="font-family: Courier; font-size: 0.8em;">li { list-style-image: url(trillium.gif); list-style-type: square; }</span> - every <strong>li</strong>
+element will present the little trillium image instead of bullet and if
+that image is not found, it will present a little square. <span style="background-color: #ffff00;"><strong>Notice that with a code like that, you would also impact the presentation of the ordered list</strong></span>!!!&nbsp;</li>
+</ul>
+<p>In the example above, in order to not impact the <strong>li</strong> element of ordered lists, what would you change in the CSS rule??? What about using the CSS selector as <strong>ul li</strong> meaning that the CSS rule would apply to every<strong> li</strong> that is inside a <strong>ul</strong> element? That would work, right?</p>
+<h3><strong>Properties for Tables</strong></h3>
+<p>We know that tables are formed by table rows (<strong>&lt;tr&gt;&lt;/tr&gt;</strong> elements) and inside those table rows, we will have table cells (<strong>&lt;td&gt;&lt;/td&gt;</strong> or <strong>&lt;th&gt;&lt;/th&gt;</strong>).</p>
+<p>We should also know that using attributes such as <strong>border</strong>, <strong>cellspacing</strong>, <strong>cellpadding</strong> for tables <span style="background-color: #ffff00;"><strong>is obsolete in HTML5</strong> </span>and will bring errors when validating your HTML code suggesting that you should use CSS instead.</p>
+<p>So, here are some CSS properties to format tables:</p>
+<ul>
+<li><strong>border-collapse</strong> -&nbsp; if the value is set to 
+collapse, the borders will be drawn adjacent to each other, on the other
+hand, if you set the value to separate, the borders will be rendered 
+separated. This property is used at the table level.</li>
+<li><strong>border-spacing</strong> - a unit value that will set the 
+space between the borders. This property does not make sense to be used 
+if you set the border-collapse to collapse value.</li>
+<li><strong>empty-cells</strong> - if you set the value of this property to hide (the default is show), the browser will not draw borders around empty cells</li>
+<li><strong>caption-side</strong> - this defines where the caption element of a table will be set and the values are top and bottom (of the table)</li>
+</ul>
+<p>Take a look at the image below that shows an example of the CSS code 
+applied to a table - on the right side you see part of the HTML document
+(the embedded CSS and the body part) and on the left side you see how 
+the table would be presented in the browser (notice that although the <strong>caption</strong> element is coded before the first row of the table, it shows at the bottom of the table because of the <strong>caption-side:bottom;</strong> applied to the <strong>table</strong> element):</p>
+<!-- <p><img src="Module%203%20-%20Coding%20CSS%20-%20Part%202%20Intermediate%20HTML%20and%20CSS%2032744-931_files/table.png" alt="HTML and CSS code for a table and how the browser presents it" width="690" height="315" data-api-endpoint="https://ccsf.instructure.com/api/v1/courses/58996/files/11289661" data-api-returntype="File"></p> -->
+
+</div>
+<h1 class="page-title">CSS Animation</h1>
+  
+  
+  
+<h3><strong>Block x Inline Elements</strong></h3>
+<p>The browser treats most elements as block elements - see the image below to see how those "blocks" are rendered by the browsers:</p>
+<!-- <p><img src="Module%203%20-%20CSS%20Animation%20Intermediate%20HTML%20and%20CSS%2032744-931_files/HTMLblocks.png" alt="elements presented as blocks by browsers" width="800" height="368" data-api-endpoint="https://ccsf.instructure.com/api/v1/courses/58996/files/11289733" data-api-returntype="File"></p> -->
+<p>It's then fair to say that <strong>h1</strong>, <strong>p</strong> are block elements as well as <strong>div</strong>, and other headings are also block elements. By default, those elements have the CSS <strong>display</strong> property set to <strong>block</strong>. But as you can see in the image above, there are certain elements that are not considered block elements such as: <strong>img</strong>, <strong>a</strong>, <strong>span</strong> - those are inline elements as they do not create "blocks" when rendered in the browser.&nbsp;</p>
+<p>This is an important concept because you can use the <strong>display</strong> CSS property to change the behavior of any element. For example, I can set the <strong>img</strong> to have <strong>display: block;</strong> and then every image will create a block, will have its own line/block when rendered by the browser.</p>
+<h3><strong>Position Relative x Position Absolute</strong></h3>
+<p>As mentioned above, the browser renders elements as they appear and 
+considers if they are block or inline elements. We can change the flow 
+of the document on the browser using also the CSS property <strong>position</strong>.</p>
+<p>Let's open in the web editor and in the browser the <span style="color: #ff0000;"><strong>cssposition.html</strong></span> file. This should be what you see in the browser:</p>
+<!-- <p><img src="Module%203%20-%20CSS%20Animation%20Intermediate%20HTML%20and%20CSS%2032744-931_files/cssposition.png" alt="result in the browser of code in cssposition.html" width="1200" height="226" data-api-endpoint="https://ccsf.instructure.com/api/v1/courses/58996/files/11289671" data-api-returntype="File"></p> -->
+<p>It's crazy! If you see the order of the elements, you have: an <strong>h1</strong> followed by 5 <strong>p</strong> (paragraphs) and the normal flow of this document would be exactly that. This file is using inline CSS (with the <strong>style</strong> attribute) so we can see exactly where the CSS position property is being applied and how this property works.</p>
+<p>The <strong>h1</strong> is presented in its normal style as no CSS is
+being applied to it. The first paragraph is also presented following 
+the normal flow of the browser. The same goes for the second paragraph. 
+The third paragraph has the style attribute as <em><strong>style="position:relative; left:30px; top:10px;"</strong></em> and the value of the <strong>position</strong> property is <strong>relative</strong> which means that the values for <strong>left</strong> and <strong>top</strong>
+will be "measured" relatively to the position where that element should
+be rendered in a normal flow (if no CSS was being applied). The fourth 
+paragraph has the style attribute as<em><strong>&nbsp;style="position:absolute; left:30px; top:10px;"</strong></em> and although the <strong>left</strong> and <strong>top</strong> values are the same as the ones for the third paragraph, the value for <strong>position</strong> is <strong>absolute</strong>
+which then will ignore completely the normal flow of the browser and 
+put the element at 30px from the left and 10px from the top <span style="background-color: #ffff00;"><strong>OF THE BROWSER WINDOW</strong></span>!</p>
+<h3>CSS Animation</h3>
+<p>The basis for CSS Animation is exactly the understanding of position 
+relative and position absolute. The idea of CSS Animation is to bring 
+animation to any element you have in the browser.&nbsp;</p>
+<p>There are two basic steps to create and use CSS Animation:</p>
+<ul>
+<li><strong>@keyframes xxx</strong> - that's where you will set up your animation where <strong>xxx</strong> will be the name you will give to your animation. This can be set up with simple CSS properties for <strong>to</strong> and <strong>from</strong>
+instances or you can be more detailed and set up those simple CSS 
+properties for 0%, 10%, 25%, etc. up to 100% of instances of time. The 
+time in-between the instances will be automatically generated by the 
+browser</li>
+<li><strong>animation</strong> - this is the CSS property that you will use to the element to bind the animation you created with the <strong>@keyframes</strong></li>
+</ul>
+<p>Let's see an example by opening the file <span style="color: #ff0000;"><strong>cssanimation1.html</strong></span> - note that this file is using an external CSS file called <span style="color: #ff0000;"><strong>cssanimation1.css</strong></span>. Let's first take a look at the CSS file. You can see in this file that the <strong>@keyframes</strong>
+is being set using % values for the instances of time where I want the 
+CSS properties to be changed - from line 3 to line 10 of that code, you 
+see the <strong>@keyframes</strong> set for the animation called <strong>myfirst</strong>.&nbsp;</p>
+<p>Notice though that the same values are being set below from line 12 
+to 19 and then line 21 to 28?!? This was coded at a time that CSS 
+Animation was not well supported by all browsers and we needed to use 
+the browser-vendor-prefixes (-moz- for Mozilla Firefox, -webkit- would 
+be for some versions of Opera, Chrome). Currently, if you check <a href="https://caniuse.com/#search=animation" class="external" target="_blank" rel="noreferrer noopener"><span>Caniuse.com website</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+<path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a>,
+you will notice that the support is much better for the current 
+versions of browsers, and depending on your target audience, you might 
+not even need to code those prefixes anymore.</p>
+<p>Further down below in the CSS file, you see the <strong>#box</strong> selector (this refers to an element that has<strong> id="box"</strong>
+as attribute) and the CSS properties used are defining the width, 
+height, background-color (that will be the default background color of 
+the element), and it is also using the animation property broken down by
+its many different CSS properties of:&nbsp;<strong>animation-name</strong> (where the name of the animation you want to apply to the element will be defined), <strong>animation-duration</strong> (how long the animation will be played),&nbsp;<strong>animation-timing-function</strong> (how the animation will flow), <strong>animation-delay</strong> (how long, after the browser loads the page, it will take for the animation to start),&nbsp;<strong>animation-iteration-count</strong> (how many times the animation will play),&nbsp;<strong>animation-direction</strong>
+(what is the direction of the animation - alternate means that it will 
+start on 0%, then go up to 100% and the next loop will do the reverse), 
+etc.</p>
+<p>Notice that even those animation properties were coded using browser 
+prefixes (basically repeated) and, again, those might not be necessary 
+depending on your target audience.</p>
+<p>Now, let's go back to the <strong>@keyframes</strong> on line 3, and let's try to understand what will happen during the animation:</p>
+<ul>
+<li><strong>0%</strong> - the CSS properties written inside { and } will be applied to the element using the animation</li>
+<li><strong>25%</strong> - at that second moment, the background color 
+will change but also the position of the element as it will be left by 
+200px and top by 0 (you do not put units after 0(zero))</li>
+<li><strong>other instances</strong> - for other instances of time of the animation, the new background color is set and a new position for the element is set</li>
+</ul>
+<p>Notice that nothing would happen with those <strong>top</strong> and <strong>left</strong> values if the position of the element (in this case the <strong>#box</strong> selector) had not been set to be <strong>relative</strong> - because as the position will change and we will need to set the <strong>top</strong> and<strong> left</strong> values to move the box, then we need to make sure that we set the position to relative so the box will really move.</p>
+<p>What if I wanted to move the box not using 200px value, but making 
+sure that the box would move up to the end of the width of the browser? 
+We might think about using <strong>left: 100%;</strong>&nbsp;- well, 
+that will certainly work but it will not be that good because you will 
+make most part of the box disappear from the browser window. In that 
+case, you can use the <strong>calc()</strong> function to do the work for you.</p>
+<h4><strong>The calc() magic</strong></h4>
+<p>If you use <strong>left: calc(100% - 100px);</strong> you will get exactly what you want - the box completely to the right side but without disappearing from the browser window <strong><span style="background-color: #ffff00;">NO MATTER THE WIDTH OF THE BROWSER</span></strong>. Why the <strong>- 100px</strong>? Because <strong>100px</strong> is the <strong>width</strong> that was set for the <strong>#box</strong>
+element - check it out in the CSS! And you want exactly that the left 
+border of the element is 100% to the right but minus the width of the 
+box that is 100px!</p>
+<p>Give it a try and see how well it will work - just remember that every <strong>left:200px;</strong> should be substituted by <strong>left: calc(100% - 100px);</strong></p>
+<p>Now, with this in mind, I'm pretty sure that if you open the files <span style="color: #ff0000;"><strong>cssanimation.html</strong></span> and <span style="color: #ff0000;"><strong>cssanimation.css</strong></span> you will easily understand what the <strong>@keyframes</strong>
+setting is, what is the name of the animation, how the animation is 
+being applied, etc. right? The animation in this case is not being set 
+with % units, it is being set with <strong>from</strong> and <strong>to</strong> (<strong>from</strong> what state the element will start and <strong>to</strong> what state it should go). Also, the animation is being applied to the element with the simple compact&nbsp;<strong><span style="font-size: 1rem;">animatio</span></strong><span style="font-size: 1rem;"><strong>n</strong> CSS property instead of using every single detailed CSS property as in the previous example.</span></p>
+<p><span style="font-size: 1rem;">The animation CSS property has</span></p>
+<p><span style="font-size: 1rem;">animation: myfirst 5s;</span></p>
+<p><span style="font-size: 1rem;">This means that the animation that is 
+being used is called myfirst and it will last 5s (5 seconds). What if 
+you wanted the animation to end with the yellow background color that is
+set in the <strong>to</strong> group of the <strong>@keyframes</strong>?
+What if you wanted this animation to happen 3 times only (not only once
+as default and not indefinitely like the previous example)?</span></p>
+<p><span style="font-size: 1rem;">If you set the CSS rules for the animation as: </span></p>
+<pre><span style="font-size: 1rem;">myfirst 5s forwards 3; </span></pre>
+<p><span style="font-size: 1rem;">OR</span></p>
+<pre><span style="font-size: 1rem;">animation-name: myfirst; <br>animation-duration:5s; <br>animation-iteration-count:3; <br>animation-fill-mode:forwards;</span></pre>
+<p><span style="font-size: 1rem;">You would get the requested result! Remember to change also the browser prefixes!</span></p>
+<p><span style="font-size: 1rem;">You can practice more CSS Animation at the <a href="https://www.w3schools.com/css/css3_animations.asp" class="external" target="_blank" rel="noreferrer noopener"><span>W3Schools CSS Animation website</span><span class="external_link_icon" style="margin-inline-start: 5px; display: inline-block; text-indent: initial; " role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+<path d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z" fill-rule="evenodd"></path>
+</svg>
+<span class="screenreader-only">Links to an external site.</span></span></a>.</span></p>
+
+</div>
