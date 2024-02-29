@@ -2,7 +2,7 @@
 
 This page contains useful links and resources for students of CNIT 132 - Intermediate HTML/CSS.
 
-## Essential HTML/CSS Links
+## HTML
 
 - [A Brief History of Web Development](https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development)
 - [HTML on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -12,6 +12,10 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Image Map Generator](https://www.image-map.net/)
 - [Live tool for HTML/CSS/JavaScript development](https://codepen.io/pen/)
 - [Emoji!](https://www.w3schools.com/charsets/ref_emoji.asp)
+
+## CSS
+- [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+- [SpeciFISHity](https://ccsf.instructure.com/api/v1/courses/58996/files/11289586)
 ## Color Tools
 
 Select and blend colors for your web projects using these tools:
