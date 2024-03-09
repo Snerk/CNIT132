@@ -59,7 +59,6 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Basic Image Map Generator](https://www.image-map.net/)
 - [Responsive Image Map Generator](https://zaneray.com/responsive-image-map/)
 - [Importance of alt-text](https://axesslab.com/alt-texts/?utm_source=frontendfocus&utm_medium=email)
-- 
 
 ## UX/UI
 - [The Reality of UX/UI design](https://mldvv3mm4crd.i.optimole.com/w:768/h:478/q:mauto/f:best/https://uxlicious.com/wp-content/uploads/2023/02/Screenshot-2023-03-21-at-11.52.31-PM.png)
