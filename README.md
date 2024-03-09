@@ -34,14 +34,24 @@ This page contains useful links and resources for students of CNIT 132 - Interme
   - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
   - [SpeciFISHity](https://specifishity.com/)
   - [Specificity Calculator](https://specificity.keegan.st/)
+
 ## Color Tools
-
-Select and blend colors for your web projects using these tools:
-
 - [Eric's Color Blender](http://meyerweb.com/eric/tools/color-blend)
 - [Colr.org](http://www.colr.org/)
 - [Colors on the Web - Color Wizard](http://www.colorsontheweb.com/Color-Tools/Color-Wizard)
 - [Color Palette Generator](https://bighugelabs.com/colors.php)
+
+## Images
+- GIF Creators
+  - [ZIP to GIF](https://huggingface.co/spaces/pyimagesearch/gif-creator)
+  - [Can I make a GIF with transparent background?](https://ezgif.com/help/gif-transparency)
+  - [Animated GIF Maker](https://ezgif.com/maker)
+  - [Make a GIF in Photoshop](https://blog.hubspot.com/marketing/how-to-create-animated-gif-quick-tip-ht)
+- [JPEG Optimizer](https://jpeg-optimizer.com/)
+- [xconvert - convert between many formats](https://www.xconvert.com/)
+- [WebP Converter](https://webp-converter.com/)
+- [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
+- [AVIF spec](https://aomediacodec.github.io/av1-avif/)
 
 ## SEO
 - [Sitemaps](https://www.xml-sitemaps.com/)
