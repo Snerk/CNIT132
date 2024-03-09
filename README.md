@@ -21,6 +21,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Convert px to em](https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp)
 - [Pseudo Classes & Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
 - [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
+- [CSS Generator](https://webcode.tools/css-generator)
 - Animation
   - [CSS animation](https://www.w3schools.com/css/css3_animations.asp) 
   - [Examples](https://www.creativebloq.com/inspiration/css-animation-examples)
@@ -52,6 +53,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [WebP Converter](https://webp-converter.com/)
 - [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
 - [AVIF spec](https://aomediacodec.github.io/av1-avif/)
+- [<img> attribute examples](https://chat.openai.com/g/g-qgG3RXQCZ-fullstack-engineer-supporter/c/d13ad487-61d0-401c-bc0a-8e57217e247d)
 
 ## SEO
 - [Sitemaps](https://www.xml-sitemaps.com/)
