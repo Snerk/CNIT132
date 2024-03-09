@@ -53,7 +53,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [WebP Converter](https://webp-converter.com/)
 - [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
 - [AVIF spec](https://aomediacodec.github.io/av1-avif/)
-- [<img> attribute examples](https://chat.openai.com/g/g-qgG3RXQCZ-fullstack-engineer-supporter/c/d13ad487-61d0-401c-bc0a-8e57217e247d)
+- [``<img>`` attribute examples](https://chat.openai.com/g/g-qgG3RXQCZ-fullstack-engineer-supporter/c/d13ad487-61d0-401c-bc0a-8e57217e247d)
 
 ## SEO
 - [Sitemaps](https://www.xml-sitemaps.com/)
