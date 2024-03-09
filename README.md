@@ -43,7 +43,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Color Palette Generator](https://bighugelabs.com/colors.php)
 
 ## Images
-- GIF Creators
+- GIF Creators (can be used at 16x16 pixels for favicon)
   - [ZIP to GIF](https://huggingface.co/spaces/pyimagesearch/gif-creator)
   - [Can I make a GIF with transparent background?](https://ezgif.com/help/gif-transparency)
   - [Animated GIF Maker](https://ezgif.com/maker)
@@ -54,6 +54,9 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
 - [AVIF spec](https://aomediacodec.github.io/av1-avif/)
 - [``<img>`` attribute examples](https://chat.openai.com/g/g-qgG3RXQCZ-fullstack-engineer-supporter/c/d13ad487-61d0-401c-bc0a-8e57217e247d)
+- [Favicon Generator](https://favicon.io)
+- [Favicon Pixel Editor](https://www.favicon.cc)
+- 
 
 ## SEO
 - [Sitemaps](https://www.xml-sitemaps.com/)
