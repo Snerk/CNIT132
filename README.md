@@ -43,7 +43,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Color Palette Generator](https://bighugelabs.com/colors.php)
 
 ## Images
-- GIF Creators (can be used at 16x16 pixels for favicon)
+- GIF Creators (can be used at 16x16 pixels for favicon - Firefox and Opera only)
   - [ZIP to GIF](https://huggingface.co/spaces/pyimagesearch/gif-creator)
   - [Can I make a GIF with transparent background?](https://ezgif.com/help/gif-transparency)
   - [Animated GIF Maker](https://ezgif.com/maker)
