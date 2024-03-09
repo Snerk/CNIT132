@@ -65,3 +65,6 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [How Google Spider Works](https://support.google.com/webmasters/answer/182072?hl=en)
 - [12 Essential Open Graph Meta Tags for Facebook and Twitter](https://neilpatel.com/blog/open-graph-meta-tags/)
 - [Google Keywords](https://adwords.google.com/select/KeywordToolExternal)
+
+## Markdown
+- [Markdown to HTML equivalents](https://www.markdownguide.org/basic-syntax/)
