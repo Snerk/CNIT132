@@ -56,7 +56,10 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [``<img>`` attribute examples](https://chat.openai.com/g/g-qgG3RXQCZ-fullstack-engineer-supporter/c/d13ad487-61d0-401c-bc0a-8e57217e247d)
 - [Favicon Generator](https://favicon.io)
 - [Favicon Pixel Editor](https://www.favicon.cc)
-- [Image Map Generator](https://www.image-map.net/)
+- [Basic Image Map Generator](https://www.image-map.net/)
+- [Responsive Image Map Generator](https://zaneray.com/responsive-image-map/)
+- [Importance of alt-text](https://axesslab.com/alt-texts/?utm_source=frontendfocus&utm_medium=email)
+- 
 
 ## UX/UI
 - [The Reality of UX/UI design](https://mldvv3mm4crd.i.optimole.com/w:768/h:478/q:mauto/f:best/https://uxlicious.com/wp-content/uploads/2023/02/Screenshot-2023-03-21-at-11.52.31-PM.png)
