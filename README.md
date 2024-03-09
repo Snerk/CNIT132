@@ -60,7 +60,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 
 ## UX/UI
 - [The Reality of UX/UI design](https://mldvv3mm4crd.i.optimole.com/w:768/h:478/q:mauto/f:best/https://uxlicious.com/wp-content/uploads/2023/02/Screenshot-2023-03-21-at-11.52.31-PM.png)
-- [Eye Tracking: The Ultimate Guide for UX & UI Designers]([Eye Tracking: The Ultimate Guide for UX & UI Designers](https://www.cursorup.com/blog/eye-tracking)
+- [Eye Tracking: The Ultimate Guide for UX & UI Designers](https://www.cursorup.com/blog/eye-tracking)
 - [80+ Important UX/UI Research Papers](https://www.mauronewmedia.com/blog/important-peer-reviewed-and-informally-published-recent-research-on-user-interface-design-and-user-experience-ux-design/)
 
 ## SEO
