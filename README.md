@@ -15,13 +15,27 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 
 ## CSS
 
+- [The Basics](https://www.codecademy.com/learn/learn-css/modules/syntax-and-selectors/cheatsheet)
+- Cheat Sheets
+  - [Interactive CSS Cheat Sheet](https://htmlcheatsheet.com/css/)
+  - [Nearly Everything in 1 (bare bones)](https://cdn.hackr.io/uploads/posts/attachments/TeUJiXCqxMODaa1lrrKTgzwqCeDpYvNa1C8nHcCv.pdf)
+  - [Cheat Sheet cheatsheet](https://www.rankred.com/css-cheat-sheets/)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [Can I Use - Browser support tables](https://caniuse.com/)
 - [Intro to Opacity & RGBA](https://www.css3.info/introduction-opacity-rgba/)
-- [Convert px to em](https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp)
+- Px Rem Em
+  - [Em vs Rem](https://j.eremy.net/confused-about-rem-and-em/)
+  - [Convert px to em](https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp)
 - [Pseudo Classes & Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
 - [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
 - [CSS Generator](https://webcode.tools/css-generator)
+- [Box Model](https://www.w3schools.com/Css/css_boxmodel.asp)
+- [Gradients](https://www.w3schools.com/css/css3_gradients.asp)
+  - [Easy Gradient Creator (GradPad)](http://ourownthing.co.uk/gradpad.html)
+- [CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+- [px to em](https://webdev-il.blogspot.com/2011/03/how-to-convert-pixel-to-em-why-use-ems_31.html)
+- [Background Blend Mode](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+- [Drawing Pictures with CSS](https://css-tricks.com/drawing-images-with-css-gradients/)
 - Animation
   - [CSS animation](https://www.w3schools.com/css/css3_animations.asp) 
   - [Examples](https://www.creativebloq.com/inspiration/css-animation-examples)
@@ -60,6 +74,9 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Responsive Image Map Generator](https://zaneray.com/responsive-image-map/)
 - [Importance of alt-text](https://axesslab.com/alt-texts/?utm_source=frontendfocus&utm_medium=email)
 
+## Fonts
+- [Google Fonts](https://fonts.google.com/)
+
 ## UX/UI
 - [The Reality of UX/UI design](https://mldvv3mm4crd.i.optimole.com/w:768/h:478/q:mauto/f:best/https://uxlicious.com/wp-content/uploads/2023/02/Screenshot-2023-03-21-at-11.52.31-PM.png)
 - [Eye Tracking: The Ultimate Guide for UX & UI Designers](https://www.cursorup.com/blog/eye-tracking)
@@ -76,5 +93,6 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [12 Essential Open Graph Meta Tags for Facebook and Twitter](https://neilpatel.com/blog/open-graph-meta-tags/)
 - [Google Keywords](https://adwords.google.com/select/KeywordToolExternal)
 
-## Markdown
+## Etc
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools)
 - [Markdown to HTML equivalents](https://www.markdownguide.org/basic-syntax/)
