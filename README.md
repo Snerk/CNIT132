@@ -39,7 +39,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [Drawing Pictures with CSS](https://css-tricks.com/drawing-images-with-css-gradients/)
 - [Animation](https://www.w3schools.com/css/css3_animations.asp)
   - [@keyframes animation is created by gradually changing from one set of CSS styles to another.](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php)
-  - Animation Examples]
+  - Animation Examples
     - [creativebloq.com](https://www.creativebloq.com/inspiration/css-animation-examples)
     - [hubspot](https://blog.hubspot.com/website/css-animation-examples)
     - [GOL in HTML/CSS/JS](https://css-tricks.com/game-life/)
