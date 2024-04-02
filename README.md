@@ -23,9 +23,10 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [Can I Use - Browser support tables](https://caniuse.com/)
 - [Intro to Opacity & RGBA](https://www.css3.info/introduction-opacity-rgba/)
-- Px Rem Em
+- [Px Rem Em](https://www.w3schools.com/cssref/css_units.php)
   - [Em vs Rem](https://j.eremy.net/confused-about-rem-and-em/)
   - [Convert px to em](https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp)
+- [id vs class Selectors](https://www.youtube.com/watch?v=1h5StQJ8hww)
 - [Pseudo Classes & Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/)
 - [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
 - [CSS Generator](https://webcode.tools/css-generator)
@@ -36,9 +37,13 @@ This page contains useful links and resources for students of CNIT 132 - Interme
 - [px to em](https://webdev-il.blogspot.com/2011/03/how-to-convert-pixel-to-em-why-use-ems_31.html)
 - [Background Blend Mode](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
 - [Drawing Pictures with CSS](https://css-tricks.com/drawing-images-with-css-gradients/)
-- Animation
-  - [CSS animation](https://www.w3schools.com/css/css3_animations.asp) 
-  - [Examples](https://www.creativebloq.com/inspiration/css-animation-examples)
+- [Animation](https://www.w3schools.com/css/css3_animations.asp)
+  - [@keyframes animation is created by gradually changing from one set of CSS styles to another.](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php)
+  - Animation Examples]
+    - [creativebloq.com](https://www.creativebloq.com/inspiration/css-animation-examples)
+    - [hubspot](https://blog.hubspot.com/website/css-animation-examples)
+    - [GOL in HTML/CSS/JS](https://css-tricks.com/game-life/)
+    - Search terms for cool CSS tricks: Advanced CSS animations examples, Award-winning web design CSS animations, CSS animation trends [year], Creative CSS animation effects, CSS animation libraries and frameworks, CSS animation workshops and courses
 - Properties
   - [W3 CSS Properties](https://www.w3schools.com/cssref/)
   - [List of CSS properties, both proposed and standard](https://www.w3.org/Style/CSS/all-properties.en.html#colorkey)
