@@ -54,6 +54,15 @@ This page contains useful links and resources for students of CNIT 132 - Interme
   - [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
   - [SpeciFISHity](https://specifishity.com/)
   - [Specificity Calculator](https://specificity.keegan.st/)
+- [Reset CSS](https://www.joshwcomeau.com/css/custom-css-reset/)
+- [Normalize CSS](https://github.com/csstools/normalize.css/blob/main/normalize.css)
+- Flexboxes
+  - [Flexbox example](https://codepen.io/abbeyjfitzgerald/pen/zzqqYo)
+  - [Flexbox Playground](https://flexbox.tech/)
+  - [Flexbox Froggy](https://flexboxfroggy.com/)
+- Grids
+  - [CSS Grid Garden](https://cssgridgarden.com/)
+  - [Using CSS Grid the Right Way](Using CSS Grid the right way) 
 
 ## Color Tools
 - [Eric's Color Blender](http://meyerweb.com/eric/tools/color-blend)
