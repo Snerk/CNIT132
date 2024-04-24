@@ -62,7 +62,7 @@ This page contains useful links and resources for students of CNIT 132 - Interme
   - [Flexbox Froggy](https://flexboxfroggy.com/)
 - Grids
   - [CSS Grid Garden](https://cssgridgarden.com/)
-  - [Using CSS Grid the Right Way](Using CSS Grid the right way) 
+  - [Using CSS Grid the right way](https://vgpena.github.io/using-css-grid-the-right-way/)
 
 ## Color Tools
 - [Eric's Color Blender](http://meyerweb.com/eric/tools/color-blend)
